@@ -9,6 +9,7 @@ services:
       - ./janus/etc/janus/:/opt/janus/etc/janus/
       - ./janus/janus.log:/var/log/janus.log
       - ./cert:/opt/janus/share/janus/certs/
+      - ./record/:/opt/janus/share/janus/recordings
     ports:
       - 8989:8989
     network_mode: "host"
